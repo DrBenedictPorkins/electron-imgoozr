@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Organizer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="initialScreen">
+    <button id="selectDirectoryBtn">Select Directory with Images</button>
+</div>
+<div id="welcomeScreen" style="display: none;">
+    <h2>Welcome to Image Organizer</h2>
+    <ul>
+        <li>A - Archive image</li>
+        <li>D - Delete image</li>
+        <li>Space - Preview image</li>
+        <li>←→ - Navigate images</li>
+        <li>R - Reset image status</li>
+        <li>Cmd+Enter - Move all tagged files</li>
+    </ul>
+    <button id="startApp">Start Using App</button>
+</div>
+<div id="mainApp" style="display: none;">
+    <!-- Your existing app content goes here -->
+    <div id="notificationLine">
+        <span id="notificationText"></span>
+    </div>
+    <div id="imgContainer">
+        <img id="imgDisplay" src="" alt="Image">
+    </div>
+    <div id="indexDisplay"></div>
+    <div id="categoryDisplay"></div>
+    <div id="infoDisplay">
+        <div id="nameInfo" class="info"></div>
+        <div id="createdInfo" class="info"></div>
+        <div id="dimensionsInfo" class="info"></div>
+    </div>
+    <div id="totalsDisplay">
+        <div id="archiveTotal" class="total archive"></div>
+        <div id="originalTotal" class="total original"></div>
+        <div id="trashTotal" class="total trash"></div>
+    </div>
+    <div id="leftHelpInfo">
+        <span id="archiveLabel">A - Archive</span> | <span id="deleteLabel">D - Delete</span> | <span id="resetLabel">R - Reset</span> | <span id="previewLabel">Space - Preview</span>
+    </div>
+    <div id="helpInfo">
+        <span id="prevLabel">← Previous</span> | <span id="nextLabel">Next →</span>
+    </div>
+    <div id="bottomHelpInfo">
+        <span id="moveFilesLabel">Cmd+Enter - Move Files</span>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
