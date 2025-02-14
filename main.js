@@ -17,7 +17,7 @@ function createWindow() {
 
   console.log("loading index.html");
 
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
   win.loadFile('index.html')
 
   ipcMain.handle('select-directory', async () => {

@@ -1,16 +1,21 @@
 {
   "name": "electron-imgoozr",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "build": {
+    "appId": "com.byteclub.imgoozr",
+    "productName": "Imgoozr",
+    "mac": {
+      "category": "public.app-category.productivity"
+    }
+  },
   "devDependencies": {
-    "electron": "^29.1.6"
+    "electron": "^29.1.6",
+    "electron-builder": "^25.1.8"
   }
 }
